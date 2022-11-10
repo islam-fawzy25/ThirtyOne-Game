@@ -1,4 +1,5 @@
 ﻿using System;
+using ThirtyOne_Game.Models;
 
 namespace ThirtyOne_Game
 {
@@ -6,13 +7,12 @@ namespace ThirtyOne_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Random random = new Random();
-
-            var n = 5;
-            var h = random.Next(5);
-            Console.WriteLine(h);
-            Console.ReadKey();
+            //Initial test
+            Deck deck = new Deck();
+            deck.Initialize();
+            Random randomNumber = new Random();
+            deck.Shuffle(randomNumber);
+            Card card = deck.DrawCard();
 
         }
     }

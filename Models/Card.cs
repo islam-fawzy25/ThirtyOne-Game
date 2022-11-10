@@ -25,7 +25,7 @@ namespace ThirtyOne_Game.Models
 
         public override string ToString()
         {
-            return Rank.ToString() + "of" + Suit.ToString();
+            return Rank.ToString() + " of " + Suit.ToString();
         }
 
 

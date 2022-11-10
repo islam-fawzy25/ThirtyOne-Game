@@ -44,6 +44,18 @@ namespace ThirtyOne_Game.Models
 
         }
 
+        public Card DrawCard()
+        {
+            if (Cards.Count == 0) return null;
+            Card card = Cards[0];
+            Cards.RemoveAt(0);
+            return card;
+        }
+
+        public Deck()
+        {
+            Cards = new List<Card>();
+        }
 
     }
 }
