@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThirtyOne_Game.Models
 {
-    class Card
+   public class Card
     {
         public Suits Suit { get; set; }
 
